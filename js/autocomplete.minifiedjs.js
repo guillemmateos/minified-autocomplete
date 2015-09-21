@@ -31,16 +31,16 @@ $('input.autocomplete').on('|keyup', function(event){
         if (value.length >= AC_MIN_LENGTH ) {
 
             if (!ac_suggestion_visible) {
-                this.addAfter(EE('div',{$:'ac-suggest',$left:ac_input_left}));
+                this.addAfter(EE('ul',{$:'ac-suggest',$left:ac_input_left}));
                 ac_suggestion_visible = true;
             }
 
-            $('.ac-suggest').fill(EE('ul'));
+            $('ul.ac-suggest').fill();
 
             _.each(suggestions, function (item) {
                 if (item.indexOf(value) != -1) {
                     ac_valid_suggestions.push( item );
-                    $('.ac-suggest ul').add(EE('li', item))
+                    $('ul.ac-suggest').add(EE('li', item))
                 }
             });
 

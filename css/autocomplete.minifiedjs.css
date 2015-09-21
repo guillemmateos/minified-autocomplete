@@ -1,13 +1,10 @@
-.ac-suggest {
-    position: absolute;
-    border: 1px solid #ccc;
-}
-
-.ac-suggest ul {
+ul.ac-suggest {
     list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: #fff;
+    position: absolute;
+    border: 1px solid #ccc;
 }
 
 .ac-suggest li.highlight {
