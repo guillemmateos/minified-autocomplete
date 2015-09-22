@@ -1,9 +1,6 @@
 /**
  * Created by guillem on 21/09/15.
  */
-var MINI = require('minified');
-var _ = MINI._, $ = MINI.$, $$ = MINI.$$, EE = MINI.EE, HTML = MINI.HTML;
-
 MINI.$.autocomplete = function( input, suggestions, container ) {
     var AC_MIN_LENGTH = 3;
 
