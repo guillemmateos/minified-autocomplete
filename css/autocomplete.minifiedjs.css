@@ -7,7 +7,7 @@ ul.ac-suggest {
     border: 1px solid #ccc;
 }
 
-.ac-suggest li.highlight {
+.ac-suggest li.highlight, .ac-suggest li:hover {
     background-color: #ef8;
 }
 

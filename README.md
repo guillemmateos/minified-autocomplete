@@ -9,9 +9,6 @@ This is a naked-as-possible implementation of a so called live-search (or autoco
 Use it as follows (first couple lines are only to include minifiedjs):
 
 ```javascript
-var MINI = require('minified');
-var _ = MINI._, $ = MINI.$, $$ = MINI.$$, EE = MINI.EE, HTML = MINI.HTML;
-
 var suggestions = ['javascript', 'java', 'php', 'phpstorm', 'options', 'oblea', 'oppium', 'facebook', 'facepalm'];
 $.autocomplete( 'input.autocomplete', suggestions );
 ```
