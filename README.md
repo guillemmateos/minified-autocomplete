@@ -6,4 +6,13 @@ This is a naked-as-possible implementation of a so called live-search (or autoco
 
 ### Usage
 
-Just use the class 'autocomplete' on your input field. Of course you should include the CSS and JS files for autocomplete-minified and minified.js itself for this script to work. Then essentially change the 'suggestions' array to suit your needs and you are ready to go. This script does not provide the parameter as an option as this was not the intention when developing it, but it should be straightforward to adapt it to your requirements
+Use it as follows:
+
+```javascript
+var suggestions = ['javascript', 'java', 'php', 'phpstorm', 'options', 'oblea', 'oppium', 'facebook', 'facepalm'];
+$.autocomplete( 'input.autocomplete', suggestions );
+```
+
+Where the first parameter of autocomplete is a selector for your input (all inputs with .autocomplete class on the example) and the second is the suggestions array. A third parameter can be sent which is the container for the values (useful so it can work together with some jquery autocomplete plugins)
+
+ course you should include the CSS and JS files for autocomplete-minified and minified.js itself for this script to work. Then essentially change the 'suggestions' array to suit your needs and you are ready to go.
